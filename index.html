@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Alarm Clock" content="Alarm Clock for CN Skill Test" />
+    
+    <title>Alarm Clock</title>
+
+    <!--Favicon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Stylesheet-->
+
+    <link rel = "stylesheet" href = "style.css" />
+
+</head>
+<body>
+    <div class= "pageTitle">
+      <h1>ALARM CLOCK <i class="material-icons" style="font-size:30px;color:red">alarm</i></h1>
+    </div>
+    <div class="main-con dis-flex">
+      <div class="clock-con dis-flex">
+        <div class="present-time marg-btm" id= "present-time">_ : _ : _ </div>
+        <form class="alarmForm dis-flex marg-btm">
+          <div>
+          <select name="hours" id="hours" required></select>
+
+          <select required name="minutes" id="minutes"></select>
+
+          <select required name="seconds" id="seconds"></select>
+          <select required name="am-pm" id="am-pm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+          </div>
+          <button class="button sub-btn" id="subBtn" type="submit">Set Alarm</button>
+        </form>
+        <div class="set-alarm-holder">
+          <div class="set-alarm-holder-title mb">ALARMS</div>
+          <div class="alarms-holder" id= "alarms-holder"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="./index.js"></script>
+  </body>
+</html>
+</html>

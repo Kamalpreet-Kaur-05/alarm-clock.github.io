@@ -1,0 +1,137 @@
+/* GLobal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif,Times New Roman;
+  }
+  
+  .dis-flex {
+    display: flex;
+  }
+  .button {
+    outline: none;
+    border: none;
+    background-color: rgb(241, 198, 117);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 1px;
+    transition: all 0.2s ease-in-out;
+  }
+  select {
+    appearance: none;
+    outline: black;
+    background-color:rgb(241, 198, 117);
+    padding: 0.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    color: #0E141B;
+    border-color: black;
+  }
+  
+  .marg-btm {
+    margin-bottom: 1rem;
+  }
+  
+  /* End GLobal Styles */
+  /* main container styling */
+  .main-con {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #2962a315;
+  }
+   /* end of main container style */
+
+  .clock-con {
+    padding: 4rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    
+    background-color: #f31584;
+  }
+  
+  .present-time {
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .alarmForm {
+    justify-content: space-between;
+    width: 100%;
+
+  }
+  
+  .sub-btn {
+    border-color: black;
+    border: 10px;
+    border-radius: 2rem;
+    font-weight: bold;
+  }
+  
+  .set-alarm-holder {
+    width: 100%;
+  }
+  
+  .set-alarm-holder .set-alarm-holder-title {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .alarm {
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    align-items: center;
+  
+  }
+  .alarm .delete-alarm {
+    border-radius: 2rem;
+    background-color: rgba(230, 13, 13, 0.918);
+    font-weight: bold;
+    color: rgb(241, 198, 117);
+    font-size:xx-medium;
+  }
+  
+  .time {
+    color: #0E141B;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .button:focus,
+  .button:hover {
+    box-shadow: rgb(255, 8, 8) 2px 2px 2px 1px inset, #fff -2px -2px 10px 1px inset;
+  }
+  
+  .pageTitle{
+    background-color: #2962a315;
+    align-items: center;
+    text-align: center;
+    color: rgb(241, 198, 117);
+    
+  }
+
+  
+  /* media query for style of devices of screen size less than 768px */
+  @media only screen and (min-width: 600px) {
+    /* adding padding to container */
+    .main-con {
+      padding-block: 2rem;
+    }
+    .clock-con{
+        justify-content: center;
+        border-radius: 50px;
+        width: 450px;
+        min-height: auto;
+    }
+  }
