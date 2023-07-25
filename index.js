@@ -119,7 +119,7 @@ function fetchAlarm() {
   const alarms = checkAlaram();
 
   alarms.forEach((time) => {
-    set_Alarm(time, true);
+    setRequiredAlarm(time, true);
   });
 }
 
